@@ -4,8 +4,13 @@ from html import escape
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 from .source import normalize
+
+PLACEHOLDER_RE = re.compile(r"\{\{([a-z_]+)\}\}")
+WORD_BOUNDARY = r"(?<!\w){surface}(?!\w)"
+FORCELLINI_HOST = "lexica.linguax.com"
 
 
 def load_json(path: Path) -> dict:
@@ -20,14 +25,43 @@ def html_attr(value: object) -> str:
     return escape(str(value), quote=True)
 
 
-def render_list(items: list[str], tag: str = "li") -> str:
-    return "\n".join(f"<{tag}>{html_text(item)}</{tag}>" for item in items)
+def render_list(items: list[str]) -> str:
+    return "\n".join(f"<li>{html_text(item)}</li>" for item in items)
 
 
-def source_surface_frequency(paragraphs: list[str], surface: str) -> int:
-    body = "\n".join(paragraphs)
-    count = len(re.findall(rf"(?<!\w){re.escape(surface)}(?!\w)", body))
-    return count or body.count(surface)
+def surface_pattern(surface: str) -> re.Pattern[str]:
+    if not surface:
+        raise ValueError("surface must not be empty")
+    return re.compile(WORD_BOUNDARY.format(surface=re.escape(surface)))
+
+
+def source_surface_frequency(body: str, surface: str) -> int:
+    return len(surface_pattern(surface).findall(body))
+
+
+def slugify(value: object) -> str:
+    slug = re.sub(r"[^0-9A-Za-z]+", "-", normalize(str(value)).lower()).strip("-")
+    return slug or "card"
+
+
+def assign_card_ids(cards: list[dict]) -> list[dict]:
+    used: dict[str, int] = {}
+    enriched = []
+    for card in cards:
+        copy = dict(card)
+        base = slugify(copy["lemma"])
+        used[base] = used.get(base, 0) + 1
+        copy["html_id"] = base if used[base] == 1 else f"{base}-{used[base]}"
+        enriched.append(copy)
+    return enriched
+
+
+def safe_forcellini_url(value: object) -> str | None:
+    url = str(value)
+    parsed = urlparse(url)
+    if parsed.scheme in {"http", "https"} and parsed.netloc == FORCELLINI_HOST and parsed.path.endswith("/forc2.php"):
+        return url
+    return None
 
 
 def short_gloss(card: dict) -> str:
@@ -45,9 +79,9 @@ def annotate_source_text(text: str, cards: list[dict], paragraph: int) -> str:
         if str(card.get("paragraph")) != str(paragraph):
             continue
         surface = str(card["surface"])
-        position = text.find(surface)
-        if position != -1:
-            spans.append((position, position + len(surface), card))
+        match = surface_pattern(surface).search(text)
+        if match:
+            spans.append((match.start(), match.end(), card))
     spans.sort(key=lambda item: (item[0], -(item[1] - item[0])))
 
     parts: list[str] = []
@@ -127,10 +161,11 @@ def render_interrogationes(lessons: list[dict]) -> str:
 
 
 def cards_with_frequency(cards: list[dict], paragraphs: list[str]) -> list[dict]:
+    body = "\n".join(paragraphs)
     enriched = []
-    for card in cards:
+    for card in assign_card_ids(cards):
         copy = dict(card)
-        copy["source_surface_frequency"] = source_surface_frequency(paragraphs, str(card["surface"]))
+        copy["source_surface_frequency"] = source_surface_frequency(body, str(card["surface"]))
         enriched.append(copy)
     return enriched
 
@@ -138,14 +173,20 @@ def cards_with_frequency(cards: list[dict], paragraphs: list[str]) -> list[dict]
 def render_dictionary(cards: list[dict]) -> str:
     rows = []
     for card in cards:
+        url = safe_forcellini_url(card["url"])
+        forcellini = (
+            f"<a href=\"{html_attr(url)}\" aria-label=\"Forcellini: {html_attr(card['lemma'])}\">forc2</a>"
+            if url
+            else "forc2"
+        )
         rows.append(
             "<tr>"
-            f"<td data-label=\"Lemma\"><a href=\"#card-{html_attr(card['lemma'])}\">{html_text(card['lemma'])}</a></td>"
+            f"<td data-label=\"Lemma\"><a href=\"#{html_attr(card['html_id'])}\">{html_text(card['lemma'])}</a></td>"
             f"<td data-label=\"Forma\">{html_text(card['surface'])}</td>"
             f"<td data-label=\"Freq.\">{html_text(card['source_surface_frequency'])}</td>"
             f"<td data-label=\"Par.\">{html_text(card['paragraph'])}</td>"
             f"<td data-label=\"Sensus\">{html_text(card['sense'])}</td>"
-            f"<td data-label=\"Forcellini\"><a href=\"{html_attr(card['url'])}\" aria-label=\"Forcellini: {html_attr(card['lemma'])}\">forc2</a></td>"
+            f"<td data-label=\"Forcellini\">{forcellini}</td>"
             f"<td data-label=\"Status\">verified</td>"
             "</tr>"
         )
@@ -155,15 +196,21 @@ def render_dictionary(cards: list[dict]) -> str:
 def render_forcellini_cards(cards: list[dict]) -> str:
     blocks = []
     for card in cards:
+        url = safe_forcellini_url(card["url"])
+        source_link = (
+            f'<p><a href="{html_attr(url)}">Forcellini: {html_text(card["lemma"])}</a></p>'
+            if url
+            else f"<p>Forcellini: {html_text(card['lemma'])}</p>"
+        )
         blocks.append(
             f"""
-            <details class="forcellini-card" id="card-{html_attr(card['lemma'])}">
+            <details class="forcellini-card" id="{html_attr(card['html_id'])}">
               <summary>{html_text(card['surface'])} · {html_text(card['lemma'])}</summary>
               <p><b>In Nepote.</b> {html_text(card['context'])}</p>
               <p><b>Forcellini.</b> {html_text(card['definition'])}</p>
               <p><b>Exemplum.</b> {html_text(card['example'])}</p>
               <p><b>Sensus huius loci.</b> {html_text(card['sense'])}</p>
-              <p><a href="{html_attr(card['url'])}">Forcellini: {html_text(card['lemma'])}</a></p>
+              {source_link}
             </details>
             """
         )
@@ -187,8 +234,8 @@ def render_project(root: Path, paragraphs: list[str]) -> str:
     template = (root / project["template"]).read_text(encoding="utf-8")
     css = (root / project["css"]).read_text(encoding="utf-8")
     replacements = {
-        "title": project["title"],
-        "subtitle": project["subtitle"],
+        "title": html_text(project["title"]),
+        "subtitle": html_text(project["subtitle"]),
         "css": css,
         "source": render_source(paragraphs, cards),
         "apparatus": render_apparatus(lessons),
@@ -198,7 +245,24 @@ def render_project(root: Path, paragraphs: list[str]) -> str:
         "forcellini_cards": render_forcellini_cards(cards),
         "memory_cards": render_memory_cards(memory_cards),
     }
-    html = template
-    for key, value in replacements.items():
-        html = html.replace("{{" + key + "}}", str(value))
+    return render_template(template, replacements)
+
+
+def render_template(template: str, replacements: dict[str, object]) -> str:
+    seen: set[str] = set()
+
+    def replace(match: re.Match[str]) -> str:
+        key = match.group(1)
+        if key not in replacements:
+            raise ValueError(f"unknown template placeholder: {key}")
+        seen.add(key)
+        return str(replacements[key])
+
+    html = PLACEHOLDER_RE.sub(replace, template)
+    missing = sorted(set(replacements) - seen)
+    if missing:
+        raise ValueError(f"unused template replacements: {', '.join(missing)}")
+    leftovers = PLACEHOLDER_RE.findall(html)
+    if leftovers:
+        raise ValueError(f"unresolved template placeholders: {', '.join(sorted(set(leftovers)))}")
     return html

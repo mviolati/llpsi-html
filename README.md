@@ -11,7 +11,7 @@ the apparatus, vocabulary, questions, and memory cards are added around an
 immutable source container.
 
 The current project builds `dist/epaminondas_llpsi.html` from Nepos'
-`Epaminondas`.
+`Epaminondas`. Runtime code uses only the Python standard library.
 
 ## 2. Contract
 
@@ -19,7 +19,7 @@ The current project builds `dist/epaminondas_llpsi.html` from Nepos'
 - The build produces only one deliverable: student HTML.
 - Forcellini data is read from `data/forcellini.lock.json`; builds do not fetch
   live web data.
-- `python .\llpsi.py release` must end with `failures: 0`.
+- `llpsi-html release` must end with `failures: 0`.
 - The verifier checks source integrity, expected structural counts, no teacher
   markers, and compact golden-regression hashes.
 
@@ -32,7 +32,7 @@ templates/             HTML and CSS
 src/llpsi_html/        source extraction, rendering, verification
 dist/                  generated HTML
 reports/               generated verification report
-llpsi.py               CLI: build, verify, release
+llpsi.py               compatibility wrapper for installed checkouts
 ```
 
 The pipeline is data-driven:
@@ -44,12 +44,14 @@ DOCX + project data + template -> HTML -> verification report
 ## 4. Commands
 
 ```powershell
-python .\llpsi.py build
-python .\llpsi.py verify
-python .\llpsi.py release
+py -m pip install -e .
+llpsi-html build
+llpsi-html verify
+llpsi-html release
 ```
 
-`release` runs build and verify.
+`release` runs build and verify. On Windows, use `py` for Python itself; on a
+configured POSIX shell, the equivalent install command is `python -m pip install -e .`.
 
 ## 5. Non-Goals
 
@@ -62,6 +64,5 @@ python .\llpsi.py release
 ## 6. Change Rule
 
 Changes to text extraction, rendering, templates, lessons, or Forcellini data
-must pass `python .\llpsi.py release`. A change is accepted only if the verifier
+must pass `llpsi-html release`. A change is accepted only if the verifier
 reports zero failures, including the golden-regression check.
-

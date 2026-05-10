@@ -1,6 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "epaminondas-llpsi-slim"
+name = "llpsi-html"
 version = "0.1.0"
 description = "Minimal source-faithful LLPSI-style learner HTML builder."
+readme = "README.md"
 requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Matteo Violati" }]
+dependencies = []
 
+[project.scripts]
+llpsi-html = "llpsi_html.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
