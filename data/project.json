@@ -1,0 +1,13 @@
+{
+  "title": "Epaminondas Nepotis",
+  "subtitle": "Textus Cornelii Nepotis integer; apparatus Latine, more LLPSI.",
+  "source_docx": "input/Nepos - Epaminonda.docx",
+  "docx_start_paragraph": 3,
+  "lessons": "data/lessons.json",
+  "forcellini_lock": "data/forcellini.lock.json",
+  "template": "templates/student.html",
+  "css": "templates/student.css",
+  "output_html": "dist/epaminondas_llpsi.html",
+  "verify_report": "reports/verify.json",
+  "golden": "data/golden.json"
+}

@@ -1,0 +1,273 @@
+{
+  "lessons": [
+    {
+      "title": "I. Epaminondas Thebanus",
+      "praeparatio": [
+        "Epaminondas Thebanus est. Pater eius Polymnis nominatur.",
+        "Hic titulus tres res dat: nomen, patrem, patriam."
+      ],
+      "marginalia": [
+        "Polymnidis filius = filius Polymnidis",
+        "Thebanus = ex Thebis"
+      ],
+      "pensa_a": [
+        "Epaminondas, Polymnid__ filius.",
+        "Theban__."
+      ],
+      "pensa_b": [
+        "Filius Polymnidis est ___.",
+        "Thebanus est vir ex ___."
+      ],
+      "pensa_c": [
+        "Quis est pater Epaminondae?",
+        "Unde est Epaminondas?"
+      ],
+      "pensa_d": [
+        "Dic simplicius: Epaminondas, Polymnidis filius. Thebanus."
+      ]
+    },
+    {
+      "title": "II. Mores Graecorum et Romanorum",
+      "praeparatio": [
+        "Nepos monet lectorem: non omnes populi eosdem mores habent.",
+        "Apud Romanos musica et saltatio aliter existimantur; apud Graecos laudi sunt."
+      ],
+      "marginalia": [
+        "neve = et ne",
+        "laudi ducuntur = bona putantur",
+        "deinde ... tum ... postremo = ordo narrationis"
+      ],
+      "pensa_a": [
+        "alien__ mores",
+        "apud Graec__"
+      ],
+      "pensa_b": [
+        "Mores sunt quae populus ___ solet.",
+        "Nepos prius de genere, deinde de ___ dicit."
+      ],
+      "pensa_c": [
+        "Cur Nepos lectoribus praecipit?",
+        "Quae apud Graecos laude digna ducuntur?"
+      ],
+      "pensa_d": [
+        "Imita ordinem: primum de ___, deinde de ___, postremo de ___."
+      ]
+    },
+    {
+      "title": "III. Disciplinae et Corpus",
+      "praeparatio": [
+        "Epaminondas eruditus est: cithara, tibiae, saltatio, philosophia.",
+        "Postea corpus exercuit, sed velocitatem ad bellum utiliorem putavit."
+      ],
+      "marginalia": [
+        "eruditus = doctus",
+        "citharizare = cithara canere",
+        "non tam ... quam = minus hoc, magis illud"
+      ],
+      "pensa_a": [
+        "cithar__ canere",
+        "palaestr__ dare operam"
+      ],
+      "pensa_b": [
+        "Lysis est praeceptor ___.",
+        "Velocitas ad belli ___ pertinet."
+      ],
+      "pensa_c": [
+        "A quibus artibus Epaminondas eruditus est?",
+        "Cur velocitati servivit?"
+      ],
+      "pensa_d": [
+        "Transforma: hanc ad belli existimabat utilitatem pertinere."
+      ]
+    },
+    {
+      "title": "IV. Virtutes et Amici",
+      "praeparatio": [
+        "Ad corporis firmitatem animi bona accesserant.",
+        "Epaminondas iniurias ferebat, commissa celabat, amicos sublevabat."
+      ],
+      "marginalia": [
+        "adeo ... ut = tantopere ... ut",
+        "commissa celans = secreta servans",
+        "omnia communia = res suas cum amicis communicat"
+      ],
+      "pensa_a": [
+        "veritat__ diligens",
+        "amicorum consili__ habebat"
+      ],
+      "pensa_b": [
+        "Qui ne ioco quidem mentitur, ___ diligit.",
+        "Virgo nubilis propter ___ collocari non potest."
+      ],
+      "pensa_c": [
+        "Quomodo Epaminondas iniurias ferebat?",
+        "Quid faciebat cum amicus pecunia egeret?"
+      ],
+      "pensa_d": [
+        "Explica Latine: omnia ei cum amicis fuisse communia."
+      ]
+    },
+    {
+      "title": "V. Pecunia Regis",
+      "praeparatio": [
+        "Diomedon pecuniam affert; Epaminondas pecunia corrumpi non potest.",
+        "Gratis facere paratus est, si res Thebanis utilis est."
+      ],
+      "marginalia": [
+        "corrumpendum susceperat = corrumpere conatus erat",
+        "gratis = sine mercede",
+        "pro patriae caritate = propter amorem patriae"
+      ],
+      "pensa_a": [
+        "pecuni__ corrumpendum",
+        "pro patriae caritat__"
+      ],
+      "pensa_b": [
+        "Diomedon venit rogatu ___ regis.",
+        "Epaminondas divitias pro patriae ___ accipere non vult."
+      ],
+      "pensa_c": [
+        "Quid Diomedon facere volebat?",
+        "Cur Epaminondas pecuniam non accepit?"
+      ],
+      "pensa_d": [
+        "Dic contrarium: pecuniam accipere / gratis facere."
+      ]
+    },
+    {
+      "title": "VI. Meneclides et Pax",
+      "praeparatio": [
+        "Meneclides pacem bello anteponit, quia Epaminondas in bello floret.",
+        "Epaminondas respondet: pax bello paritur."
+      ],
+      "marginalia": [
+        "obtrectator = adversarius verbis",
+        "otium nomine servitutem concilias",
+        "castris utendum est = castra vobis necessaria sunt"
+      ],
+      "pensa_a": [
+        "pac__ bello anteferrent",
+        "servitut__ concilias"
+      ],
+      "pensa_b": [
+        "Qui pace diu frui volunt, bello ___ esse debent.",
+        "Castra non palaestra sunt locus ___."
+      ],
+      "pensa_c": [
+        "Quid suadet Meneclides?",
+        "Quomodo pax paritur secundum Epaminondam?"
+      ],
+      "pensa_d": [
+        "Compara: Agamemnon unam urbem cepit; Epaminondas Graeciam liberavit."
+      ]
+    },
+    {
+      "title": "VII. Dux Privatus",
+      "praeparatio": [
+        "Cives Epaminondam non praefecerunt; dux imperitus exercitum in periculum duxit.",
+        "Epaminondas privatus opem dedit et exercitum liberavit."
+      ],
+      "marginalia": [
+        "imperitus = rem belli nesciens",
+        "privatus numero militis = sine imperio",
+        "obsidione liberatum = ex obsidione servatum"
+      ],
+      "pensa_a": [
+        "dux imperit__",
+        "ab hostibus obsidebantur"
+      ],
+      "pensa_b": [
+        "Milites de ___ pertimescebant.",
+        "Epaminondas memoriam ___ non adhibuit."
+      ],
+      "pensa_c": [
+        "Cur milites opem petiverunt?",
+        "Quid fecit Epaminondas privatus?"
+      ],
+      "pensa_d": [
+        "Explica: patriae irasci nefas esse ducebat."
+      ]
+    },
+    {
+      "title": "VIII. Iudicium et Gloria",
+      "praeparatio": [
+        "Epaminondas causam collegarum in se transfert.",
+        "In iudicio culpam confitetur, sed gloriam civitatis ostendit."
+      ],
+      "marginalia": [
+        "lege non oboedire = contra legem facere",
+        "morte multatus = morte damnatus",
+        "suffragium ferre = sententiam dare"
+      ],
+      "pensa_a": [
+        "in iudici__ venit",
+        "legi non oboedir__"
+      ],
+      "pensa_b": [
+        "Epaminondas petivit ut in periculo suo ___ scriberent.",
+        "Iudices suffragium ferre non ___."
+      ],
+      "pensa_c": [
+        "Quid collegae dixerunt?",
+        "Cur iudices riserunt?"
+      ],
+      "pensa_d": [
+        "Redde simplicius inscriptionem quam Epaminondas petivit."
+      ]
+    },
+    {
+      "title": "IX. Mantinea",
+      "praeparatio": [
+        "Apud Mantineam omnes in Epaminondam impetum faciunt.",
+        "Ferrum retinet donec audit Boeotios vicisse."
+      ],
+      "marginalia": [
+        "acies instructa = exercitus paratus",
+        "sparo eminus percussus = telo de longinquo ictus",
+        "ferro extracto = postquam ferrum extractum est"
+      ],
+      "pensa_a": [
+        "apud Mantine__",
+        "ferro extract__"
+      ],
+      "pensa_b": [
+        "Lacedaemonii salutem patriae in ___ unius viri positam putabant.",
+        "Epaminondas dixit: Satis ___."
+      ],
+      "pensa_c": [
+        "Cur ferrum retinuit?",
+        "Quid audivit ante mortem?"
+      ],
+      "pensa_d": [
+        "Imita: renuntiatum est vicisse Boeotios."
+      ]
+    },
+    {
+      "title": "X. Stirps et Thebae",
+      "praeparatio": [
+        "Epaminondas liberos non reliquit, sed pugnam Leuctricam stirpem vocat.",
+        "Nepos iudicat unum hominem civitati pluris fuisse."
+      ],
+      "marginalia": [
+        "stirps = progenies; hic memoria victoriae",
+        "superstes = qui post mortem manet",
+        "caput totius Graeciae = princeps Graeciae"
+      ],
+      "pensa_a": [
+        "stirps potest mihi deesse",
+        "pugnam Leuctric__"
+      ],
+      "pensa_b": [
+        "Pugna Leuctrica Epaminondae ___ est.",
+        "Thebae sine Epaminonda alieno ___ paruerunt."
+      ],
+      "pensa_c": [
+        "Quid Epaminondas pro stirpe reliquit?",
+        "Quid Nepos de Thebis iudicat?"
+      ],
+      "pensa_d": [
+        "Explica Latine: unum hominem pluris quam civitatem fuisse."
+      ]
+    }
+  ]
+}

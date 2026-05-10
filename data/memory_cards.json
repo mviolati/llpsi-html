@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "question": "Quis fuit Epaminondas?",
+      "answer": "Epaminondas, Polymnidis filius, Thebanus."
+    },
+    {
+      "question": "Cur Nepos de moribus monet?",
+      "answer": "Ne alienos mores ad nostros referamus."
+    },
+    {
+      "question": "Quid plus diligebat in corpore?",
+      "answer": "Velocitatem plus quam magnitudinem virium."
+    },
+    {
+      "question": "Quid respondit Diomedonti?",
+      "answer": "Divitias pro patriae caritate accipere noluit."
+    },
+    {
+      "question": "Quomodo pax paritur?",
+      "answer": "Pax bello paritur."
+    },
+    {
+      "question": "Quid dixit moriens?",
+      "answer": "Satis vixi. Invictus enim morior."
+    }
+  ]
+}
+

@@ -1,0 +1,6 @@
+[project]
+name = "epaminondas-llpsi-slim"
+version = "0.1.0"
+description = "Minimal source-faithful LLPSI-style learner HTML builder."
+requires-python = ">=3.11"
+

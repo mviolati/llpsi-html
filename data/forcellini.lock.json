@@ -1,0 +1,266 @@
+{
+  "schema_version": "forcellini-lock/v2",
+  "total": 26,
+  "cards": [
+    {
+      "lemma": "mos",
+      "surface": "mores",
+      "paragraph": "2",
+      "context": "ne alienos mores ad suos referant",
+      "definition": "MOS , mōris, m. 3. Ratione habita etymi, est vel a modus, extritis mediis litteris, vel a νόμος lex, etc. V. etymologos. — Mos est institutum consuetudine usuque firmatum, sive bonum, sive malum sit; vel sunt boni aut mali agendi modi, qui non a legibus, sed a libera hominum etiam singulorum voluntate quum processerint, habitu atque usu firmati sunt. Festus p. 157. 15. Müll. tradit, esse institutum patrium, id est memoriam veterum pertinentem maxime ad religiones caeremoniasque antiquorum; et cum ritu confundit. Sed latius accipitur pro instituto quolibet. A consuetudine quid differat, V. in CONSUETUDO . Gr. ἔθος (It. condotta, costume, usanza, stile; Fr. conduite, procédé des hommes, usage, coutume; Hisp. conducta, uso, usacion, usanza, costumbre; Germ. d. Sitte, Gewohnheit, d. Brauch, das Herkommen, Betragen, die Handtungsweise, Aufführung, Lebensart; Angl. a manner, custom, way, fashion ).",
+      "example": "Ovid. 2. Met. 245. Illae more suo (nam morem fecerat usus) Plangorem dederant.",
+      "sense": "institutum consuetudine firmatum; mores populi",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=mos"
+    },
+    {
+      "lemma": "musica",
+      "surface": "musicen",
+      "paragraph": "2",
+      "context": "musicen nostris moribus abesse",
+      "definition": "MŪSĬCA , ae et musice, es, f. 1. musica, μουσική, scientia, quae modum canendi demonstrat: a Musis. Antiquis signabat universe humanitatis studia, idque ex vi nominis. V. MUSICUS, i. Sed posteriores modulationi numerorum speciatim id nomen tribuerunt. Cic. 3. Orat. 33. 132. Num geometriam Euclide, aut Archimede, num musicam Damone, aut Aristoxeno tractante, etc? Auson. epist. 10. 43. Socci et cothurni musica. h. e. poesis comica et tragica. — Apud Graecos antiquos tantae venerationis fuit, ut iidem musici et vates et sapientes judicarentur. Cujus scientiae quum se imperitum Themistocles confessus esset, ut ait Cic. 1. Tusc. 2. 4., habitus est indoctior. Quintil. 1. 10. 9. Musice antiquis temporibus tantum venerationis habuit, ut etc. — Occultae musicae nullus est respectus, Graecum proverb. usurpatum a Nerone, causas prodeundi in scaenam quaerente, ut est apud Sueton. Ner. 20. Τῆς λανθαν",
+      "example": "Cic. 3. Orat. 33. 132. Num geometriam Euclide, aut Archimede, num musicam Damone, aut Aristoxeno tractante, etc? Auson. epist. 10. 43. Socci et cothurni musica. h. e. poesis comica et tragica. — Apud Graecos antiquos tantae venerationis fuit, ut iidem musici et vates et sapientes judicarentur.",
+      "sense": "ars canendi apud Graecos laudata",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=musica"
+    },
+    {
+      "lemma": "salto",
+      "surface": "saltare",
+      "paragraph": "2",
+      "context": "saltare vero etiam in vitiis poni",
+      "definition": "SALTO , as, āvi, ātum, are, 1. frequentat. a salio. Particip. Saltans sub A. I. a. et B.; Saltatus, Saltaturus et Saltandus sub B. - Salto dicitur de iis, qui lasciviae causa, artificiosis saltibus et gesticulationibus ad sonum tibiae moventur, brachia, pedes et corpus varie jactando, crotalis etiam et cymbalis interdum adhibitis, ut ex Cic. Pis. 9. et 10. colligitur, χορεύω, ὀρχέομαι (It. ballare, danzare; Fr. danser; Hisp. danzar, bailar; Germ. tanzen; Angl. to dance ), et usurpatur",
+      "example": "Cic. Pis. 9. et 10. colligitur, χορεύω, ὀρχέομαι (It. ballare, danzare; Fr. danser; Hisp. danzar, bailar; Germ. tanzen; Angl. to dance ), et usurpatur A) Intransitive; et B) Transitive. A) Intransitive. I.) Proprie. - a) Forma activa. Scip. Afric. apud Macrob. 2. Saturn. 10. Vidi puerum bullatum cum crotalis saltare.",
+      "sense": "corpus ad sonum movere",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=salto"
+    },
+    {
+      "lemma": "disciplina",
+      "surface": "disciplinis",
+      "paragraph": "2",
+      "context": "quibus disciplinis et a quibus sit erudītus",
+      "definition": "DISCĬPLĪNA , ae, f. 1. Est syncope a discipulina; quae vox legitur in quodam nummo Hadriani apud Eckhel. D. N. V. T. 6. p. 503., ubi de disciplina militari sermo est: item in Inscript. ann. 1825. in ruinis Locrorum in Italia reperta, et cum cl. Furlanetto communicata a Mich. Aug. Macri. D. M. S. ALIMMA QVAE IN VITA SVA SVMMAM DISCIPVLINAM SERVAVIT VIXIT ANN. XXI. etc. Videtur autem vox composita a verbo discere et plenus a pleo. - Ceterum occurrit",
+      "example": "Cic. pro leg. Manil. 10. 28. E ludo atque pueritiae disciplina. Sic",
+      "sense": "artes et doctrinae quibus eruditur",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=disciplina"
+    },
+    {
+      "lemma": "cithara",
+      "surface": "citharizare",
+      "paragraph": "3",
+      "context": "citharizare et cantare ad chordarum sonum",
+      "definition": "CĬTHĂRA , ae, f. 1. κιθάρα, instrumentum musicum, de cujus forma et origine V. CHELYS, et Isid. 2. Orig. 3. 22. (It. cetera; Fr. cithare, luth, lyre; Hisp. laud; Germ. d. Cither; Angl. a harpe, viol, lut, cittern ).",
+      "example": "Virg. 6. AEn. 646. Septem discrimina vocum. Cf. Boeth. 1. Music. 20. Simplicem principio fuisse ( in cithara ) musicam refert Nicomachus, adeo ut quatuor nervis tota constaret: idque usque ad Orpheum duravit: nil vero in eis esse inconsonum, ad imitationem scilicet musicae mundanae, quae quatuor constat elementis: cujus quadrichordi Mercu",
+      "sense": "instrumentum musicum chordarum",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=cithara"
+    },
+    {
+      "lemma": "tibia",
+      "surface": "tibiis",
+      "paragraph": "3",
+      "context": "cantare tibiis ab Olympiodoro",
+      "definition": "TĪBĬA , ae, f. 1. Si Nonio credimus, olim masc. gen. usurparunt. Varro apud eumd. p. 229. 24. Merc. Quaero meas lubidines ad tibias bilingos. Sed lege bilingues, inquit Forcellinus. Verum Riese legit ibid. ( Varron. Sat. reliq. p. 172.) Quate meas lubidinis ad tibios bilinguos. Sane pro forma tibius citatur Roeper. Philol. XVIII. 464. Ad rem tamen Oehlerus: \"Masculinam vocabuli tibiae formam, fortasse tibium, fuisse antiquis scriptoribus usurpatam, nemo hucusque persuadere conatus est\". — Ratione habita etymi, attendendum non videtur quibusdam quod tradit Isid. 11. Orig. 1. 110. tibias vocatas quasi tubas ob similem utrarumque longitudinem et speciem. Recentiores tamen utriusque vocis originem statuunt illam ducendo ab una eademque radice Skr. tub, quod tubum significat. — Tibia est os cruris exterius, κνήμη (It. osso anteriore della gamba, stinco, caviglia, focile, tibia; Fr. l' os antérieur de la jambe, tibia; Hisp. hueso anterior de la pierna; Germ. das Schienbein; Angl. shin ).",
+      "example": "Plin. 1. Ep. 20. a med. Genu aut tibia aut talus. Phaedr. 5. 7. concidit casu gravi Nec opinue et sinistram fregit tibiam. In utroque loco",
+      "sense": "instrumentum quo canitur",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=tibia"
+    },
+    {
+      "lemma": "praeceptor",
+      "surface": "praeceptorem",
+      "paragraph": "3",
+      "context": "philosophiae praeceptorem habuit Lysim",
+      "definition": "PRAECEPTOR , ōris, m. 3. ¶ 1. Est qui praecipit, h. e. praeoccupat. Paulin. Nolan. ep. 23. ( al. 3.) n. 4. Liberalium plenus affectuum, sed servilium praeceptor operum, vix ut me aquam ministrare manibus suis sineret. Est qui malit praereptor, aut praecerptor: sed illud videtur elegantius. V. PRAECIPIO . ¶ 2. Item chi comanda, ἐπιστάτης, qui jubet. Gell. 1. 13. Nam si tali praeceptori ratio reddenda sit, nihil faciendum esse monuerunt aliter, quam praeceptum est. ¶ 3. Item qui docet, institutor, doctor, instruttore, precettore, maestro. Plaut. Pseud. 4. 7. 96. Praeceptor tuus, qui te hanc fallaciam docuit. Cic. 3. Orat. 15. 57. Neque disjuncti doctores, sed iidem erant vivendi praeceptores atque dicendi. Id. 1. Invent. 25. 35. Considerare oportet, quos habuerit artium liberalium magistros, quos vivendi praeceptores. Id. 2. Phil. 6. 14. Hunc tu auctorem et praeceptorem omnium consiliorum",
+      "example": "Gell. 1. 13. Nam si tali praeceptori ratio reddenda sit, nihil faciendum esse monuerunt aliter, quam praeceptum est. ¶ 3. Item qui docet, institutor, doctor, instruttore, precettore, maestro.",
+      "sense": "qui docet; magister",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=praeceptor"
+    },
+    {
+      "lemma": "philosophia",
+      "surface": "philosophiae",
+      "paragraph": "3",
+      "context": "philosophiae praeceptorem",
+      "definition": "PHĬLŎSŎPHĬA , ae, f. 1. filosofia, φιλοσοφία, amor et studium sapientiae: a φίλος amicus et σοφία sapientia. Cic. ita descripsit 2. Off. 2. 5. Nec quicquam aliud est philosophia, si interpretari velis, praeter studium sapientiae. Sapientia autem est, ut a veteribus philosophis definitum est, rerum divinarum et humanarum causarumque, quibus eae res continentur, scientia. V. Senec. Ep. 89. — a) Universim. Cic. 1. Legg. 22. 58. Ita fit, ut mater omnium bonarum rerum sit sapientia, a cujus amore Graeco verbo philosophia nomen invenit. Id. 3. Orat. 16. 60. Quod omnis rerum optimarum cognitio atque in iis exercitatio philosophia nominaretur. Id. 1. Tusc. 26. 64. Philosophia omnium mater artium quid est aliud, nisi - inventum deorum? Seneca Ep. 89. Sapientia perfectum bonum est mentis humanae: philosophia sapientiae amor est et affectatio. Cic. 3. Fin. 2. 4. Ars vitae philosophia. Id. 2. Tusc.",
+      "example": "Cic. ita descripsit 2. Off. 2. 5. Nec quicquam aliud est philosophia, si interpretari velis, praeter studium sapientiae. Sapientia autem est, ut a veteribus philosophis definitum est, rerum divinarum et humanarum causarumque, quibus eae res continentur, scientia. V. Senec. Ep. 89. — a) Universim.",
+      "sense": "studium sapientiae",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=philosophia"
+    },
+    {
+      "lemma": "palaestra",
+      "surface": "palaestrae",
+      "paragraph": "3",
+      "context": "palaestrae dare operam",
+      "definition": "PĂLAESTRA , ae, f. 1. a παλαίω luctor, quod a πάλη lucta. — Palaestrum, i, generis neutri usurpat non imitandus Ennod. 1. Ep. 9. Sic se equidem exercita litterarum gymnasiis palaestra dilucidant, sic madefacta studiorum oleo loquendi artificiis oris membra submittunt, etsi inter indigenas etc. Id. 2. Ep. 6. Inter studiorum suorum palaestra versatos fulget Latinitas, mirum dictu, si amat extraneos. Id. Dict. 9. ante med. Te inter palaestra tua originaria linguae palma sollicitat. Haec cl. Furlanetto in I. Append.: sed haec eadem mihi librariorum menda videntur. — Ceterum palaestra est locus ( V. infra sub II. 1. ) in quo antiqui lucta exercebantur, gymnasium, παλαίστρα (It. palestra, ginnasio o luogo adatto alla lotta e agli altri giuochi ginnastici; Fr. palestre, lieu où l'on s' exerçait à la lutte, gymnase; Hisp. gimnasio; Germ. der Ringplatz, Ringbahn, Ringschule; Angl. a school for wrestling, and other exercises ).",
+      "example": "Plaut. Amph. 4. 1. 3. Apud emporium, atque in macello in palaestra atque in foro. Catull. 63. 60. Abero foro, palaestra, stadio, gymnasiis.",
+      "sense": "locus exercitationis corporis",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=palaestra"
+    },
+    {
+      "lemma": "velocitas",
+      "surface": "velocitati",
+      "paragraph": "3",
+      "context": "non tam magnitudini virium servivit quam velocitati",
+      "definition": "VĒLŌCĬTAS , ātis, f. 3. (velox) celeritas, pernicitas, ταχύτης (It. prestezza, velocità, rattezza; Fr. vélocité, vitesse, cétérité; Hisp. velocidad, prontitud, presteza; Germ. die Schnelligkeit, Raschheit; Angl. velocity, swiftness ).",
+      "example": "Caes. 8. B. G. 36. Germani pedites summae velocitatis.",
+      "sense": "celeritas corporis ad bellum utilis",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=velocitas"
+    },
+    {
+      "lemma": "firmitas",
+      "surface": "firmitatem",
+      "paragraph": "4",
+      "context": "Ad hanc corporis firmitatem",
+      "definition": "FIRMĬTAS , ātis, f. 3. στερεότης, βεβαιότης, stabilitas, soliditas, constantia (It. fermezza, sodezza, stabilità; Fr. solidité, consistance, force; Hisp. solidez, consistencia, estabilidad, firmeza; Germ. d. Stärke, Festigkeit; Angl. firmmess, constancy, validity, stability ).",
+      "example": "Plaut. Most. 3. 2. 133. Age, specta, postes cujusmodi! quanta firmitate et quanta crassitudine!",
+      "sense": "stabilitas/robur corporis",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=firmitas"
+    },
+    {
+      "lemma": "modestus",
+      "surface": "modestus",
+      "paragraph": "4",
+      "context": "Erat enim modestus, prudens, gravis",
+      "definition": "MŌDESTUS , a, um, adject. (modus et fortasse sto). Comp. Modestior I. et II.; Sup. Modestissimus I. — Modestus est moderatus, modicus, in quo mediocritas servatur, μέτριος, moderato, limitato, temperato.",
+      "example": "Caes. 13. Veritus sum ne tibi litterae meae crebriores oneri essent; nam quo mei amantiores, tanto me laborum tuorum parciorem et occupationum tuarum modestiorem esse oportet. Sil. It. 16. 134. Hannibal ipse etiam jam jamque modestior armis. h. e.",
+      "sense": "qui modum servat",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=modestus"
+    },
+    {
+      "lemma": "iniuria",
+      "surface": "iniurias",
+      "paragraph": "4",
+      "context": "amicorum ferens iniurias",
+      "definition": "INJŪRĬA , ae, f. 1. (injurius, in privat. et jus, juris) omne id, quod non jure fit, sive re fiat, ut quum manus inferuntur; sive verbis, ut in convicio et contumelia. Ulp. Dig. 47. tit. 10. qui est. De injuriis, l. 1. Injuria ex eo dicta est , quod non jure fiat: omne enim, quod non jure fit, injuria fieri dicitur : hoc generaliter. Specialiter autem injuria dicitur contumelia. Interdum injuriae appellatione damnum culpa datum significatur: interdum iniquitatem injuriam dicimus. Cic. 4. Herenn. 25. 35. Injuriae sunt, quae aut pulsatione corpus, aut convicio aures, aut aliqua turpitudine vitam cujuspiam violant. Gr. ὕβρις, ἀδίκημα (It. ingiuria, torto, ingiustizia; Fr. toute action injuste, injustice, violation de la justice; Hisp. injuria, injusticia; Germ. d. Unrecht, d. Gewaltthat; Angl. injury, wrong, injustice, insult ).",
+      "example": "Ulp. Dig. 47. tit. 10. qui est. De injuriis, l. 1. Injuria ex eo dicta est , quod non jure fiat: omne enim, quod non jure fit, injuria fieri dicitur : hoc generaliter. Specialiter autem injuria dicitur contumelia. Interdum injuriae appellatione damnum culpa datum significatur: interdum iniquitatem injuriam dicimus.",
+      "sense": "quod non iure fit; contumelia",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=iniuria"
+    },
+    {
+      "lemma": "corrumpo",
+      "surface": "corrumpendum",
+      "paragraph": "5",
+      "context": "Epaminondam pecuniā corrumpendum",
+      "definition": "CORRUMPO vel conrumpo, rumpis, rūpi, ruptum, rumpere, a. 3. (cum et rumpo). Corrumpier auctum per paragogen pro corrumpi, est apud Lucret. 6. 17. - Part. Corrumpens II. 3. Corruptus in omnibus paragr. et in fin.; Corrupturus et Corrumpendus II. 3. Corrumpere, in quo praepositio cum est intensiva, significat rem aliquam omnino rumpere atque in particulas dissolvere, adeoque absumere, destruere (It. corrompere, disfare, distruggere; Fr. dissoudre violemment, détruire, anéantir; Hisp. disolver, destruir, aniquilar; Germ. ganz zerbrechen, zerstören, vermichten; Angl. to corrupt, destroy ).",
+      "example": "Caes. 7. B. G. 55. Reliquum frumentum flumine atque incendio corruperunt.",
+      "sense": "pecunia ad malam voluntatem ducere",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=corrumpere"
+    },
+    {
+      "lemma": "gratis",
+      "surface": "gratis",
+      "paragraph": "5",
+      "context": "gratis facere sum paratus",
+      "definition": "Gratĭis, ablat. plur. a gratia, et Gratis, (cuius ultima syllaba licenter corripitur in Inscript. apud Murat. 146. 5. QVIDQVID AMATAE DEDITVR, ACCEPTVM GRATIS AMATOR HABET.) per syncopen pro gratiis saepe adverbii more usurpatur; eo tantum discrimine, quod gratiis apud antiquos, gratis vero apud aurei aevi scriptores occurrit: significant autem sine mercede, aut praemio, gratuito, προῖκα (It. senza pagamento o premio; Fr. pour rien, sans intérêt, gratuitement; Hisp. gratuitamente, graciosamente; Germ. aus Gunstbezeugung, Gefälligkeit, ohne Bezahlung, umsonst; Angl. freely, for nought, scot-free ).",
+      "example": "Plaut. Epid. 3. 4. 36. Foras educite, quam introduxistis fidicinam: atque etiam fides, Ei quae accessere, tibi addam dono gratiis. Id. Asin. 1. 3. 40. Hanc tibi noctem honoris causa gratiis dono dabo. Id. Poen. 4. 2. 46. Neque triobolum ullum amicae das et ductas gratiis. Apud eumd. Asin. prol. 6. Age, nunc reside: cave modo, ne gratiis.",
+      "sense": "sine mercede aut praemio",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=gratia"
+    },
+    {
+      "lemma": "caritas",
+      "surface": "caritate",
+      "paragraph": "5",
+      "context": "pro patriae caritate",
+      "definition": "caritas sumitur pro dilectione, benevolentia, amore, seu pro benevolentiae vinculo, quo duae personae inter se conjunguntur; et est lenis quidem affectus (ἦθος), minime vero vehemens (πάθος), ut docet Cic. Partit. Orat. 16. 56. Nam aut caritate moventur homines, ut deorum, ut patriae, ut parentum: aut amore, ut fratrum, ut conjugum, ut liberorum etc. Cf. eumd. ibid. 25. 88., et Quintil. 6. 2. 12. Hinc proprie caritas tamquam verbi diligere substantivum usurpatum fuit, ideoque differt ab amore: V. Homonym. in fine.",
+      "example": "Cic. Partit. Orat. 16. 56. Nam aut caritate moventur homines, ut deorum, ut patriae, ut parentum: aut amore, ut fratrum, ut conjugum, ut liberorum etc. Cf. eumd. ibid. 25. 88., et",
+      "sense": "dilectio patriae",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=caritas"
+    },
+    {
+      "lemma": "divitiae",
+      "surface": "divitias",
+      "paragraph": "5",
+      "context": "orbis terrarum divitias accipere nolo",
+      "definition": "DĪVĬTĬAE , ārum, f. plur. 1. In singulari numero. Accius apud Non. p. 475. 24. Merc. AEternabilem divitiam partissent. - Divitiae sunt opulentia, amplae fortunae, opes, copiae, omnium rerum abundantia (It. ricchezze, abbondanza; Fr. biens, richesses; Hisp. bienes, riqueza, abundancia de bienes; Germ. der Reichthum; Angl. riches, wealth ).",
+      "example": "Plaut. Pers. 4. 4. 101. Divitias facere ex aliqua re. Id. Trin. 3. 2. 56. In divitiis esse. Id. Capt. 2. 2. 31. Tum igitur ei, cum in aleis tanta gratia est, ut praedicas, quid divitiae, sunt ne opimae? Lucret. 6. 12. Affluere divitiis. Id. 5. 1117. Divitiae grandes homini sunt, vivere parce AEquo animo.",
+      "sense": "opes, magna pecunia",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=divitiae"
+    },
+    {
+      "lemma": "servitus",
+      "surface": "servitutem",
+      "paragraph": "6",
+      "context": "otii enim nomine servitutem concilias",
+      "definition": "SERVĬTUS , ūtis, f. 3. (servus) Servitutium pro servitutum, ut civitatium, Arpinatium, habetur in Dig. 8. 2. 31. extr. et ibid. 3. 1. extr. in editione Torrentini aliorumq., et etiam legitur apud Plaut. Pers. loc. cit. in SERVITRICIUS. V. hanc voc. — Servitus est conditio servorum, servitium, famulatus, sive sub domino sive sub tyranno, δουλεία (It. schiavitù, servaggio, servitù; Fr. condition d'esclave, esclavage, servitude; Hisp. esclavitud; Germ. Knechtschaft, Sklaverei; Angl. slavery, servitude ).",
+      "example": "Plaut. Pers. loc. cit. in SERVITRICIUS. V. hanc voc. — Servitus est conditio servorum, servitium, famulatus, sive sub domino sive sub tyranno, δουλεία (It. schiavitù, servaggio, servitù; Fr. condition d'esclave, esclavage, servitude; Hisp. esclavitud; Germ. Knechtschaft, Sklaverei; Angl. slavery, servitude ). I.) Proprie. ¶ 1.",
+      "sense": "conditio servorum; libertas amissa",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=servitus"
+    },
+    {
+      "lemma": "castra",
+      "surface": "castris",
+      "paragraph": "6",
+      "context": "castris est vobis utendum",
+      "definition": "Hinc Castra, ōrum, n. 2. in plurali numero saepius occurrit, et est locus, in quo exercitus cum in expeditione est, subinde consistit, et vallo fossaque munit, tentoria figit, quietem capit (It. alloggiamento dell'esercito in campagna, steccato, campo; Fr. camp de guerre; Hisp. campo; Germ. Heer- oder Kriegslager, Lager, Feldlager; Angl. a camp, encampment ).",
+      "example": "Nepos Alcib. 8. Castra navalia juxta hostes habere. h. e. locus, ubi naves ad bellum paratae consistunt. Adde eumd. Hann. 11. Sic",
+      "sense": "locus exercitus in expeditione",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=castrum"
+    },
+    {
+      "lemma": "imperitus",
+      "surface": "imperītus",
+      "paragraph": "7",
+      "context": "duxque esset delectus belli imperītus",
+      "definition": "IMPĔRĪTUS vel inperitus, a, um, adject. (in privat. et peritus). Comp. Imperitior et Sup. Imperitissimus. - Imperitus est non peritus, ignarus, inscitus, ἄπειρος, ἀδαήμων (It. imperito, ignorante; Fr. inexpérimenté, ignorant, étranger à; Hisp. inexperto, ignorante; Germ. unerfahren, unkundig, unwissend, unbewandert worin; Angl. unskilful, unlearned, unexperienced, rude ).",
+      "example": "Cic. 5. de republ. 3. Summi juris peritissimus, civilis non imperitus. Id. Balb. 20. 47. Imperitus foederis, rudis exemplorum, ignarus belli. Id. 3. Orat. 44. 175. Imperitus dicendi ignarusque. Id. Rosc. Am. 49. 143. Homo imperitus morum, agricola et rusticus.",
+      "sense": "non peritus belli",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=imperitus"
+    },
+    {
+      "lemma": "privatus",
+      "surface": "privatus",
+      "paragraph": "7",
+      "context": "Erat enim ibi privatus numero militis",
+      "definition": "PRĪVĀTUS , a, um, adject., vel rectius part. praeter. pass. a verbo privo ( V. Part. Privatus in PRIVO ) adjective usurpatum (privus), et ¶ 1. Generatim privatus est ac dicitur, qui est uniuscujusque proprius; cui opponitur communis et publicus, ἴδιος (It. privato, particolare, proprio; Fr. particulier, propre, personnel, individuel; Hisp. particular, propio, personal; Germ. abgesondert, getrennt von Staate, daher d. Privatmann betreffend, zum Privatmann gehörig, privat; Angl. private, one's own, particular, peculiar ). Usurpatur — a) De hominibus, et privatus est, qui in magistratu non est, ἰδιώτης; nam qui magistratum gerit, est publicus. — Adjective. Universim Cic. 3. Legg. 19. 44. et Dom. 17. 43. In privatos homines leges ferri noluerunt. h. e. in singulos, privos. Alii leg. privos utroque loco. — Speciatim Id. 11. Phil. 10. 25. Paullo ante clarissimo viro privato imperium extra ordi",
+      "example": "Cic. 3. Legg. 19. 44. et Dom. 17. 43. In privatos homines leges ferri noluerunt. h. e. in singulos, privos. Alii leg. privos utroque loco. — Speciatim Id. 11. Phil. 10. 25. Paullo ante clarissimo viro privato imperium extra ordinem non dedi. — Absolute.",
+      "sense": "sine magistratu vel imperio publico",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=privatus"
+    },
+    {
+      "lemma": "obsidio",
+      "surface": "obsidione",
+      "paragraph": "7",
+      "context": "exercitum obsidione liberatum",
+      "definition": "OBSĬDĬO , ōnis, f. 3. (obsideo) proprie usurpatur in re militari, et est actus, quo milites circumsident locum aliquem armisque claudunt expugnandi causa, περικάθησις (It. assedio; Fr. siége, blocus; Hisp. sitio, bloquio; Germ. d. Besetzung, Einschliessung, Blokade; Angl. a siege, blockade ).",
+      "example": "Cic. Mur. 9. 20. Partim vi, partim obsidione urbes capere.",
+      "sense": "actus quo locus ab hostibus clauditur",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=obsidio"
+    },
+    {
+      "lemma": "iudicium",
+      "surface": "iudicium",
+      "paragraph": "8",
+      "context": "At ille in iudicium vēnit",
+      "definition": "JŪDĬCĬUM , ĭi, n. 2. (judex) legitima causae seu rei controversae, apud judicem inter duos aut plures litigantes, contentio et disceptatio ( V. JURIDICIUM ), κρίσις, κρῖμα (It. giudizio; Fr. jugement, instruction judiciaire; Hisp. juicio, sentencia: Germ. d. Urtheil, d. gerichtliche Untersuchung, d. Gericht; Angl. judgment, a trial, sentence ).",
+      "example": "Cic. Caecin. 2. 6. Omnia judicia aut distrahendarum controversiarum, aut puniendorum maleficiorum causa reperta sunt. Id. Quinct. 2. 9. Praetor judicium prius de probro, quam de re fieri maluit. Id. Flacc. 38. 94. Gravia judicia pro reipublicae dignitate, multa de conjuratorum scelere fecistis. Id. Rosc. Am. 4. 11.",
+      "sense": "causae disceptatio apud iudices",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=iudicium"
+    },
+    {
+      "lemma": "invictus",
+      "surface": "Invictus",
+      "paragraph": "9",
+      "context": "Invictus enim morior",
+      "definition": "INVICTUS , a, um, adject. (in privat. et victus). Comp. Invictior et Sup. Invictissimus et Invictissumus. - Invictus est qui victus non est, aut qui vinci non potest, ἀνίκητος (It. invitto, non vinto; Fr. qui n'a pas été vaincu, invaincu; Hisp. no vencido, invencido; Germ. unbesiegt, unbesiegbar, unūberwindlich, unbezwinglich; Angl. unconquered, unsubdued ).",
+      "example": "Cic. 1. Off. 20. 68. Invictum se a labore praestare. indefesso.",
+      "sense": "qui victus non est",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=invictus"
+    },
+    {
+      "lemma": "stirps",
+      "surface": "stirps",
+      "paragraph": "10",
+      "context": "stirps potest mihi deesse",
+      "definition": "STIRPS , stirpis, m. et f. 3. — a) In recto casu stirpes, vel etiam stirpis, pro stirps exhibent optim. Cod. MSS. Liv. 1. 1., 26. 13. etc. Drakenb. V. et Donat. p. 1747. Putsch., ubi tamen stirps pro stirpis leg. Keil. — In genet. plur. stirpium habent Cic. et Plin. loc. cit. Etiam stirpum apud Incert. Gramm. 34. p. 137. Endl., sed perperam. — b) De genere haec habet Donat. Ars Gramm. 2. p. 375. 33. Keil. Sunt nomina incerti generis inter masculinum et femininum, ut stirps etc. Prob. vero p. 210. 23. ibid. Stirpem Vergilius et masculino et feminino genere dixit: masculino quum radices arborum significare vult, ut stirpem Teucri nullo discrimine sacrum: feminino, quum ad progeniem refert, ut heu stirpem invisam et stirpem admisceri Phrygiam. V. et infra. — c) Ratione habita etymi, duci potest a rad. Skr. starp, ejusdem significationis. — Stirps est radix et imus truncus arboris, qua haeret radicibus: item totus ipse truncus, ex quo rami exeunt, ῥίζα, ῥιζόφυτον (It. radice, sterpo; Fr. souche, racine; Hisp. cepa, raiz; Germ. Wurzel, Wurzelstock; Angl. the root of a tree, the stump ).",
+      "example": "Liv. 1. 1., 26. 13. etc. Drakenb. V. et Donat. p. 1747. Putsch., ubi tamen stirps pro stirpis leg. Keil. — In genet. plur. stirpium habent",
+      "sense": "progenies; hic victoria pro stirpe",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=stirps"
+    },
+    {
+      "lemma": "immortalis",
+      "surface": "immortalis",
+      "paragraph": "10",
+      "context": "immortalis sit necesse est",
+      "definition": "IMMORTALIS vel inmortalis, e, adject. (in negat. et mortalis) qui non moritur, qui morti non est obnoxius, ἀθάνατος (It. immortale; Fr. immortel, qui n'est pas soumis à la mort; Hisp. immortal; Germ. unsterblich; Angl. immortal, everlasting, that never dies ).",
+      "example": "Cic. 3. Nat. D. 12. 29. Si nullum corpus immortale sit, nullum esse corpus sempiternum: corpus autem immortale nullum esse etc. Id. Senect. 23. 82. Animi sunt immortales. Id. 1. Off. 33. 120. Immortalis natura. Id. Senect. 21. 77. Credo deos immortales sparsisse animos in corpora humana etc.",
+      "sense": "qui non moritur; memoria permanens",
+      "url": "http://lexica.linguax.com/forc2.php?searchedLG=immortalis"
+    }
+  ]
+}

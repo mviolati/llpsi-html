@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="la">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <style>{{css}}</style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>{{title}}</h1>
+      <p class="source-note">{{subtitle}}</p>
+      <nav aria-label="Index">
+        <ol>
+          <li><a href="#textus">Textus</a></li>
+          <li><a href="#apparatus">Praeparatio</a></li>
+          <li><a href="#exercitia">Pensa</a></li>
+          <li><a href="#interrogationes">Interrogationes</a></li>
+          <li><a href="#vocabula">Vocabula</a></li>
+          <li><a href="#chartae-forcellini">Chartae</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <section id="textus" class="reading-layout">
+      <div class="source-frame">
+        <h2>Textus Nepotis</h2>
+        <section id="textus-auctoris" class="source-reading" aria-label="Textus Nepotis">
+{{source}}
+        </section>
+      </div>
+      <aside id="apparatus" class="side-frame" aria-label="Apparatus">
+        <h2>Praeparatio et Marginalia</h2>
+        {{apparatus}}
+      </aside>
+    </section>
+
+    <section id="exercitia" class="section-band">
+      <h2>Pensa</h2>
+      {{exercises}}
+    </section>
+
+    <section id="interrogationes" class="section-band">
+      <h2>Interrogationes</h2>
+      <div class="interrogationes-grid">{{interrogationes}}</div>
+    </section>
+
+    <section id="vocabula" class="dictionary section-band">
+      <h2>Vocabula Nova et Dubia</h2>
+      <table>
+        <thead>
+          <tr><th>Lemma</th><th>Forma</th><th>Freq.</th><th>Par.</th><th>Sensus</th><th>Forcellini</th><th>Status</th></tr>
+        </thead>
+        <tbody>{{dictionary}}</tbody>
+      </table>
+    </section>
+
+    <section id="chartae-forcellini" class="section-band">
+      <h2>Chartae Forcellini</h2>
+      <div class="cards-grid">{{forcellini_cards}}</div>
+    </section>
+
+    <section class="section-band">
+      <h2>Chartae Memoriae</h2>
+      <div class="cards-grid">{{memory_cards}}</div>
+    </section>
+  </main>
+</body>
+</html>
+
