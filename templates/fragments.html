@@ -1,0 +1,73 @@
+<!-- fragment:list_item -->
+<li>{{item}}</li>
+<!-- /fragment:list_item -->
+
+<!-- fragment:source_paragraph -->
+<p class="source-text" id="source-{{index}}" data-source-paragraph="{{index}}">{{text}}</p>
+<!-- /fragment:source_paragraph -->
+
+<!-- fragment:new_word -->
+<span class="new-word" tabindex="0" data-lemma="{{lemma}}" data-gloss="{{gloss}}" aria-label="{{gloss}}" title="{{gloss}}">{{surface}}</span>
+<!-- /fragment:new_word -->
+
+<!-- fragment:apparatus_card -->
+<details class="apparatus-card" data-target="source-{{index}}" open>
+  <summary>{{title}}</summary>
+  <h3>Praeparatio</h3>
+  <ul>{{praeparatio}}</ul>
+  <h3>Marginalia</h3>
+  <ul>{{marginalia}}</ul>
+</details>
+<!-- /fragment:apparatus_card -->
+
+<!-- fragment:pensum -->
+<section class="pensum"><h3>{{title}}</h3><ol>{{items}}</ol></section>
+<!-- /fragment:pensum -->
+
+<!-- fragment:lectio -->
+<section class="lectio" id="lectio-{{index}}" data-source-paragraph="{{index}}">
+  <h2>{{title}}</h2>
+  <div class="pensa-grid">{{pensa}}</div>
+</section>
+<!-- /fragment:lectio -->
+
+<!-- fragment:interrogatio -->
+<section class="interrogatio" data-source-paragraph="{{index}}">
+  <h3><a href="#source-{{index}}">{{title}}</a></h3>
+  <ol>{{questions}}</ol>
+</section>
+<!-- /fragment:interrogatio -->
+
+<!-- fragment:forcellini_link -->
+<a href="{{url}}" aria-label="Forcellini: {{lemma}}">{{label}}</a>
+<!-- /fragment:forcellini_link -->
+
+<!-- fragment:dictionary_row -->
+<tr>
+  <td data-label="Lemma"><a href="#{{card_id}}">{{lemma}}</a></td>
+  <td data-label="Forma">{{surface}}</td>
+  <td data-label="Freq.">{{frequency}}</td>
+  <td data-label="Par.">{{paragraph}}</td>
+  <td data-label="Sensus">{{sense}}</td>
+  <td data-label="Forcellini">{{forcellini}}</td>
+  <td data-label="Status">verified</td>
+</tr>
+<!-- /fragment:dictionary_row -->
+
+<!-- fragment:forcellini_card -->
+<details class="forcellini-card" id="{{card_id}}">
+  <summary>{{surface}} &middot; {{lemma}}</summary>
+  <p><b>In Nepote.</b> {{context}}</p>
+  <p><b>Forcellini.</b> {{definition}}</p>
+  <p><b>Exemplum.</b> {{example}}</p>
+  <p><b>Sensus huius loci.</b> {{sense}}</p>
+  <p>{{source}}</p>
+</details>
+<!-- /fragment:forcellini_card -->
+
+<!-- fragment:memory_card -->
+<details class="memory-card">
+  <summary>{{question}}</summary>
+  <p>{{answer}}</p>
+</details>
+<!-- /fragment:memory_card -->

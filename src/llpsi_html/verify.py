@@ -8,6 +8,8 @@ from pathlib import Path
 from .source import digest, normalize, source_body
 
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+GOLDEN_SCHEMA = "golden-html/v3"
+FORBIDDEN_MARKERS = ("Clavis Magistri", "Guida Magistri", "Appendix Probationum")
 
 
 def attrs_to_dict(attrs: list[tuple[str, str | None]]) -> dict[str, str]:
@@ -153,6 +155,7 @@ def html_snapshot(html: str) -> dict:
     parser = SnapshotParser()
     parser.feed(html)
     source = parser.source.paragraphs
+    forbidden_markers = [marker for marker in FORBIDDEN_MARKERS if marker in html]
     return {
         "source_digest": digest(source),
         "source_paragraphs": source,
@@ -161,6 +164,7 @@ def html_snapshot(html: str) -> dict:
         "memory_cards": parser.memory_cards,
         "new_words": parser.new_words,
         "source_anchor_ids": parser.source.source_ids,
+        "forbidden_markers": forbidden_markers,
         "counts": {
             "source_paragraphs": len(source),
             "source_anchor_ids": len(parser.source.source_ids),
@@ -168,10 +172,6 @@ def html_snapshot(html: str) -> dict:
             "dictionary_rows": len(parser.dictionary),
             "forcellini_cards": len(parser.forcellini_cards),
             "memory_cards": len(parser.memory_cards),
-            "teacher_markers": sum(
-                marker in html
-                for marker in ["Clavis Magistri", "Guida Magistri", "Appendix Probationum"]
-            ),
         },
     }
 
@@ -179,6 +179,25 @@ def html_snapshot(html: str) -> dict:
 def json_digest(value: object) -> str:
     raw = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(raw.encode("utf-8")).hexdigest().upper()
+
+
+def data_counts(expected: list[str], cards: list[dict], memory_cards: list[dict]) -> dict[str, int]:
+    return {
+        "source_paragraphs": len(expected),
+        "source_anchor_ids": len(expected),
+        "new_words": len(cards),
+        "dictionary_rows": len(cards),
+        "forcellini_cards": len(cards),
+        "memory_cards": len(memory_cards),
+    }
+
+
+def data_hashes(lessons: list[dict], cards: list[dict], memory_cards: list[dict]) -> dict[str, str]:
+    return {
+        "lessons": json_digest(lessons),
+        "forcellini_lock": json_digest(cards),
+        "memory_cards": json_digest(memory_cards),
+    }
 
 
 def verify_project(root: Path) -> dict:
@@ -189,11 +208,14 @@ def verify_project(root: Path) -> dict:
     actual_snapshot = html_snapshot(html)
     actual = actual_snapshot["source_paragraphs"]
     cards = json.loads((root / project["forcellini_lock"]).read_text(encoding="utf-8"))["cards"]
+    lessons = json.loads((root / project["lessons"]).read_text(encoding="utf-8"))["lessons"]
+    memory_cards = json.loads((root / project["memory_cards"]).read_text(encoding="utf-8"))["cards"]
     counts = actual_snapshot["counts"]
+    golden = json.loads((root / project["golden"]).read_text(encoding="utf-8"))
     failures = []
     if actual != expected:
         failures.append({"kind": "source_text_mismatch"})
-    expected_ids = [f"source-{index}" for index in range(1, len(actual) + 1)]
+    expected_ids = [f"source-{index}" for index in range(1, len(expected) + 1)]
     if actual_snapshot["source_anchor_ids"] != expected_ids:
         failures.append(
             {
@@ -202,46 +224,47 @@ def verify_project(root: Path) -> dict:
                 "actual": actual_snapshot["source_anchor_ids"],
             }
         )
-    expected_counts = {
-        "source_paragraphs": 10,
-        "source_anchor_ids": 10,
-        "new_words": 26,
-        "dictionary_rows": 26,
-        "forcellini_cards": 26,
-        "memory_cards": 6,
-        "teacher_markers": 0,
-    }
+    if actual_snapshot["forbidden_markers"]:
+        failures.append({"kind": "forbidden_markers", "markers": actual_snapshot["forbidden_markers"]})
+    if len(lessons) != len(expected):
+        failures.append({"kind": "lesson_count", "expected": len(expected), "actual": len(lessons)})
+    for key, expected_value in data_counts(expected, cards, memory_cards).items():
+        if counts[key] != expected_value:
+            failures.append({"kind": "data_count", "key": key, "expected": expected_value, "actual": counts[key]})
+    expected_counts = golden["counts"]
     for key, expected_value in expected_counts.items():
         if counts[key] != expected_value:
             failures.append({"kind": "count", "key": key, "expected": expected_value, "actual": counts[key]})
-    if len(cards) != 26:
-        failures.append({"kind": "forcellini_lock_count", "expected": 26, "actual": len(cards)})
-    golden_path = project.get("golden")
-    golden = None
-    if golden_path:
-        golden = json.loads((root / golden_path).read_text(encoding="utf-8"))
-        if golden.get("schema_version") != "golden-html/v2":
-            failures.append({"kind": "golden_schema_version", "expected": "golden-html/v2"})
-        actual_hashes = {
-            "dictionary": json_digest(actual_snapshot["dictionary"]),
-            "forcellini_cards": json_digest(actual_snapshot["forcellini_cards"]),
-            "memory_cards": json_digest(actual_snapshot["memory_cards"]),
-            "new_words": json_digest(actual_snapshot["new_words"]),
-        }
-        if actual_snapshot["source_digest"] != golden["source_digest"]:
-            failures.append({"kind": "golden_regression", "key": "source_digest"})
-        if counts != golden["counts"]:
-            failures.append({"kind": "golden_regression", "key": "counts"})
-        for key, actual_hash in actual_hashes.items():
-            if actual_hash != golden["hashes"].get(key):
-                failures.append({"kind": "golden_regression", "key": key})
+    if len(cards) != expected_counts["forcellini_cards"]:
+        failures.append({"kind": "forcellini_lock_count", "expected": expected_counts["forcellini_cards"], "actual": len(cards)})
+    if golden.get("schema_version") != GOLDEN_SCHEMA:
+        failures.append({"kind": "golden_schema_version", "expected": GOLDEN_SCHEMA})
+    actual_hashes = {
+        "dictionary": json_digest(actual_snapshot["dictionary"]),
+        "forcellini_cards": json_digest(actual_snapshot["forcellini_cards"]),
+        "memory_cards": json_digest(actual_snapshot["memory_cards"]),
+        "new_words": json_digest(actual_snapshot["new_words"]),
+    }
+    actual_data_hashes = data_hashes(lessons, cards, memory_cards)
+    if actual_snapshot["source_digest"] != golden["source_digest"]:
+        failures.append({"kind": "golden_regression", "key": "source_digest"})
+    if counts != golden["counts"]:
+        failures.append({"kind": "golden_regression", "key": "counts"})
+    for key, actual_hash in actual_hashes.items():
+        if actual_hash != golden["hashes"].get(key):
+            failures.append({"kind": "golden_regression", "key": key})
+    for key, actual_hash in actual_data_hashes.items():
+        if actual_hash != golden["data_hashes"].get(key):
+            failures.append({"kind": "golden_regression", "key": key})
     report = {
         "schema_version": "slim-html-verify/v1",
         "html": str(html_path),
         "source_digest_expected": digest(expected),
         "source_digest_actual": digest(actual),
         "counts": counts,
-        "golden_checked": bool(golden),
+        "forbidden_markers": actual_snapshot["forbidden_markers"],
+        "data_hashes": actual_data_hashes,
+        "golden_checked": True,
         "failures": failures,
     }
     return report

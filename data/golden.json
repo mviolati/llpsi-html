@@ -1,5 +1,5 @@
 {
-  "schema_version": "golden-html/v2",
+  "schema_version": "golden-html/v3",
   "source": "dist/epaminondas_llpsi.html before architecture compaction",
   "source_digest": "39B9B8A5D1299B58D02783ADA1B5B88C79F3B8459ECDE3FE5333DEDF7BDB77F9",
   "counts": {
@@ -8,13 +8,17 @@
     "new_words": 26,
     "dictionary_rows": 26,
     "forcellini_cards": 26,
-    "memory_cards": 6,
-    "teacher_markers": 0
+    "memory_cards": 6
   },
   "hashes": {
     "dictionary": "947C6CBE51D6CF9237FC43351CAA7EF087513FB68F22A9B75A71FD3AA0FC48A9",
     "forcellini_cards": "F8A3AD7B79E03468E466E2D89E7E18B613F6EA78EFA2988227B0D6D57A47825B",
     "memory_cards": "60960F8D98C0DAC9E3249859D0FB2C5E61B6C73E9644DA58B7E07D4346A4D0A2",
     "new_words": "8ECB957A9956259E8E8811B24A706E5DE1F3E52E874CA27CEE9D88E58E15EB34"
+  },
+  "data_hashes": {
+    "lessons": "C36A753DA75D1C85B5E8AA9FD700513697B86CDAF330D0EBB3BF849EF5DDBD1B",
+    "forcellini_lock": "2C8F40080BA6F3233CDAC0282F82794FB949BBCD4CF7D7FE6B0B5B7B03C885C5",
+    "memory_cards": "666D3D2D13B99C0C0E69B53184051F7A6954F22AD060C271D6EA975F477357ED"
   }
 }

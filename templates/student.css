@@ -25,7 +25,7 @@ a { color: var(--accent); }
 .source-note { color: var(--muted); margin: 0; }
 nav ol { display: flex; flex-wrap: wrap; gap: 8px 18px; list-style: none; padding-left: 0; margin: 16px 0 0; }
 .reading-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 34%); gap: 28px; align-items: start; }
-.source-frame, .side-frame, .section-band { border-top: 1px solid var(--line); padding-top: 16px; }
+.source-frame, .side-frame, main > section:not(#textus) { border-top: 1px solid var(--line); padding-top: 16px; }
 #textus-auctoris.source-reading { background: var(--surface); border: 1px solid var(--line); padding: 18px 20px; }
 .source-text { font-size: 18px; line-height: 1.68; margin: 0 0 18px; }
 .source-text::before { content: attr(data-source-paragraph); display: inline-block; min-width: 1.5em; margin-right: 0.45em; color: var(--accent); font-size: 0.78em; font-weight: 600; }
@@ -78,4 +78,3 @@ th { color: var(--accent); font-size: 14px; }
   .new-word::after { content: none !important; display: none !important; }
   .source-text, tr, details { break-inside: avoid; }
 }
-

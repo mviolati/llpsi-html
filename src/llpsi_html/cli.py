@@ -37,7 +37,7 @@ def verify(root: Path) -> tuple[dict, Path]:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="llpsi-html")
-    parser.add_argument("command", choices=["build", "verify", "release"])
+    parser.add_argument("command", nargs="?", default="release", choices=["build", "verify", "release"])
     parser.add_argument("--root", type=Path, default=PACKAGE_ROOT)
     args = parser.parse_args(argv)
     root = args.root.resolve()
